@@ -4,31 +4,41 @@
 }
 body {
     background: rgb(211, 201, 228);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .chatbot-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgb(253,29,29);
-    background: linear-gradient(341deg, rgba(253,29,29,1) 0%, rgba(226,129,110,1) 60%, rgba(252,176,69,1) 100%);
+    background: rgb(253, 29, 29);
+    background: linear-gradient(
+        341deg,
+        rgba(253, 29, 29, 1) 0%,
+        rgba(226, 129, 110, 1) 60%,
+        rgba(252, 176, 69, 1) 100%
+    );
     border-radius: 50%;
     height: 3em;
     width: 3em;
     cursor: pointer;
     &:hover {
-        background: rgb(253,29,29);
-        background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(226,129,110,1) 60%, rgba(252,176,69,1) 100%);
+        background: rgb(253, 29, 29);
+        background: linear-gradient(
+            90deg,
+            rgba(253, 29, 29, 1) 0%,
+            rgba(226, 129, 110, 1) 60%,
+            rgba(252, 176, 69, 1) 100%
+        );
     }
 }
 
-.robot-prop{
+.robot-prop {
     font-size: 22px;
     margin: 10px;
     color: white;
 }
 
-.prop{
+.prop {
     text-align: center;
     padding: 3px;
     height: 15px;
@@ -38,7 +48,7 @@ body {
     color: lightsalmon;
     font-size: 10px;
 }
-.bullet{
+.bullet {
     height: 5px;
     background: lightsalmon;
     width: 5px;
@@ -52,26 +62,106 @@ body {
 
 @keyframes change-dimensions {
     0% {
-      height : 0px;
-      width : 0px;
+        height: 0px;
+        width: 0px;
     }
     100% {
-      height : 450px;
-      width : 300px;
+        height: 450px;
+        width: 300px;
     }
-    
-  } 
-  @keyframes change-dimensions-2 {
-    0%{
-        height : 450px;
-        width : 300px;
+}
+@keyframes change-dimensions-2 {
+    0% {
+        height: 450px;
+        width: 300px;
     }
-    100%{
-        height : 0px;
-        width : 0px;
-    } 
-  } 
-.hidden{
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+@-moz-keyframes change-dimensions {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 450px;
+        width: 300px;
+    }
+}
+@-moz-keyframes change-dimensions-2 {
+    0% {
+        height: 450px;
+        width: 300px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+@-webkit-keyframes change-dimensions {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 450px;
+        width: 300px;
+    }
+}
+@-webkit-keyframes change-dimensions-2 {
+    0% {
+        height: 450px;
+        width: 300px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+@-o-keyframes change-dimensions {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 450px;
+        width: 300px;
+    }
+}
+@-o-keyframes change-dimensions-2 {
+    0% {
+        height: 450px;
+        width: 300px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+@-ms-keyframes change-dimensions {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 450px;
+        width: 300px;
+    }
+}
+@-ms-keyframes change-dimensions-2 {
+    0% {
+        height: 450px;
+        width: 300px;
+    }
+    100% {
+        height: 0px;
+        width: 0px;
+    }
+}
+
+.hidden {
     opacity: 0;
     visibility: hidden;
     transition: 1s;
@@ -80,8 +170,29 @@ body {
     animation-duration: 0.25s;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
+
+    -webkit-animation-name: change-dimensions-2;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: backwards;
+
+    -moz-animation-name: change-dimensions-2;
+    -moz-animation-duration: 0.25s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: backwards;
+
+    -o-animation-name: change-dimensions-2;
+    -o-animation-duration: 0.25s;
+    -o-animation-iteration-count: 1;
+    -o-animation-fill-mode: backwards;
+
+    -ms-animation-name: change-dimensions-2;
+    -ms-animation-duration: 0.25s;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-fill-mode: backwards;
+
 }
- 
+
 .chatbot-window.open {
     opacity: 1;
     visibility: visible;
@@ -91,12 +202,32 @@ body {
     animation-duration: 0.25s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    -ms-animation-name: change-dimensions;
+    -ms-animation-duration: 0.25s;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-fill-mode: forwards;
+
+    -o-animation-name: change-dimensions;
+    -o-animation-duration: 0.25s;
+    -o-animation-iteration-count: 1;
+    -o-animation-fill-mode: forwards;
+
+    -moz-animation-name: change-dimensions;
+    -moz-animation-duration: 0.25s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-name: change-dimensions;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+
     
 }
 
-
 .chatbot-window {
-    opacity : 0;
+    opacity: 0;
     visibility: hidden;
     transition: 0.3s;
     width: 0px;
@@ -109,11 +240,17 @@ body {
     overflow: hidden;
     transform: translate(-20px, -70px);
     .container-1 {
-        background: rgb(253,29,29);
-        background: linear-gradient(341deg, rgba(253,29,29,1) 0%, rgba(226,129,110,1) 60%, rgba(252,176,69,1) 100%);        height: 40%;
+        background: rgb(253, 29, 29);
+        background: linear-gradient(
+            341deg,
+            rgba(253, 29, 29, 1) 0%,
+            rgba(226, 129, 110, 1) 60%,
+            rgba(252, 176, 69, 1) 100%
+        );
+        height: 40%;
         padding: 10px 20px;
         color: white;
-        p{
+        p {
             margin: 10px 5px;
         }
     }
@@ -135,8 +272,14 @@ body {
                 top: -25px;
                 left: 10px;
                 .chatbot-icon-2 {
-                    background: rgb(253,29,29);
-                    background: linear-gradient(341deg, rgba(253,29,29,1) 0%, rgba(226,129,110,1) 60%, rgba(252,176,69,1) 100%);        height: 40%;
+                    background: rgb(253, 29, 29);
+                    background: linear-gradient(
+                        341deg,
+                        rgba(253, 29, 29, 1) 0%,
+                        rgba(226, 129, 110, 1) 60%,
+                        rgba(252, 176, 69, 1) 100%
+                    );
+                    height: 40%;
                     border-radius: 50%;
                     height: 3em;
                     width: 3em;
@@ -179,7 +322,7 @@ body {
                         text-align: center;
                         margin: 0 0 10px 15px;
                         font-size: 11px;
-                        & > span{
+                        & > span {
                             font-weight: 500;
                         }
                     }
