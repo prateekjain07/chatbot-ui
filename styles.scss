@@ -6,6 +6,16 @@ body {
     background: rgb(211, 201, 228);
     font-family: "Roboto", sans-serif;
 }
+.label{
+    position: fixed;
+    bottom: 40px;
+    right: 80px;
+    font-size: 14px;
+    color: rgb(253, 29, 29);
+}
+.hide{
+    display: none;
+}
 .chatbot-icon {
     position: fixed;
     bottom: 20px;
